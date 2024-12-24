@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShopEase</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Contact Page Styles */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            padding: 3rem 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-info {
+            width: 40%;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-right: 2rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form {
+            width: 50%;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .contact-form label {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .contact-form button {
+            background-color: #f39c12;
+            color: #fff;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer .footer-nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        footer .footer-nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer .footer-nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info, .contact-form {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Page Content -->
+    <div class="contact-container">
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, feel free to reach out to us! We're here to assist you with anything you need.</p>
+            <p><strong>Email:</strong> support@shopease.com</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 1234 ShopEase St, Shopping City, SH 56789</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ShopEase. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

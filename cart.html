@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - ShopEase</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        header nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Cart Page Styles */
+        .cart-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+        }
+
+        .cart-items {
+            width: 70%;
+        }
+
+        .cart-summary {
+            width: 25%;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-items h2, .cart-summary h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .cart-item-info h3 {
+            font-size: 1.2rem;
+        }
+
+        .cart-item-info p {
+            color: #f39c12;
+            font-weight: bold;
+        }
+
+        .cart-item-quantity {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .cart-item-quantity input {
+            width: 50px;
+            text-align: center;
+            padding: 0.3rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .cart-item-quantity button {
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 0.3rem 0.8rem;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cart-item-quantity button:hover {
+            background-color: #e67e22;
+        }
+
+        .cart-summary .total {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .cart-summary .total p {
+            font-weight: bold;
+        }
+
+        .cart-summary .checkout-btn {
+            width: 100%;
+            background-color: #f39c12;
+            color: #fff;
+            padding: 1rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cart-summary .checkout-btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer .footer-content p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer .footer-nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        footer .footer-nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        footer .footer-nav ul li a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">ShopEase</div>
+        <nav>
+            <ul>
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Page Content -->
+    <div class="cart-container">
+        <!-- Cart Items Section -->
+        <div class="cart-items">
+            <h2>Your Cart</h2>
+            <div class="cart-item">
+                <img src="images/product1.jpg" alt="Product 1">
+                <div class="cart-item-info">
+                    <h3>Product 1</h3>
+                    <p>$20.00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <img src="images/product2.jpg" alt="Product 2">
+                <div class="cart-item-info">
+                    <h3>Product 2</h3>
+                    <p>$35.00</p>
+                </div>
+                <div class="cart-item-quantity">
+                    <button>-</button>
+                    <input type="number" value="1">
+                    <button>+</button>
+                </div>
+            </div>
+            <!-- More items can be added here -->
+        </div>
+
+        <!-- Cart Summary Section -->
+        <div class="cart-summary">
+            <h2>Summary</h2>
+            <div class="total">
+                <p>Subtotal:</p>
+                <p>$55.00</p>
+            </div>
+            <div class="total">
+                <p>Shipping:</p>
+                <p>$5.00</p>
+            </div>
+            <div class="total">
+                <p>Total:</p>
+                <p>$60.00</p>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 ShopEase. All Rights Reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
