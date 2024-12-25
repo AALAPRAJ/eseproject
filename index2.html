@@ -1,105 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Website</title>
-    <link rel="stylesheet" href="style2.css">
-   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StyleHub - Fashion E-commerce</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <header>
-        <div class="logo">ShopEase</div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">StyleHub</h1>
+      <div class="nav-links">
+        <a href="cart.html" class="nav-link">Cart</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="#" class="nav-link">Categories</a>
+        <a href="#" class="nav-link">About</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </button>
+        <button class="icon-btn cart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-badge">2</span>
+        </button>
+        <button class="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <h1>Welcome to ShopEase</h1>
-            <p>Your one-stop solution for online shopping!</p>
-            <a href="#products" class="btn">Shop Now</a>
-        </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <h1>Discover Your Style</h1>
+      <p>Explore our curated collection of premium fashion items. From casual wear to luxury accessories, find your perfect match.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Shop Now</a>
+        <a href="#" class="btn-secondary">
+          View Catalog
+          <svg xmlns="https://etimg.etb2bimg.com/photo/89015341.cms" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Featured Products Section -->
-        <section id="products" class="products">
-            <h2>Featured Products</h2>
-            <div class="product-list">
-                <div class="product-item">
-                    <img src="images/product1.jpg" alt="Product 1">
-                    <h3>Product 1</h3>
-                    <p>Price: $20.00</p>
-                </div>
-                <div class="product-item">
-                    <img src="images/product2.jpg" alt="Product 2">
-                    <h3>Product 2</h3>
-                    <p>Price: $35.00</p>
-                </div>
-                <div class="product-item">
-                    <img src="images/product3.jpg" alt="Product 3">
-                    <h3>Product 3</h3>
-                    <p>Price: $50.00</p>
-                </div>
-            </div>
-        </section>
+  <!-- Featured Products -->
+  <section class="featured">
+    <div class="section-header">
+      <h2>Featured Products</h2>
+      <a href="#" class="view-all">
+        View all
+        <svg xmlns="https://etimg.etb2bimg.com/photo/89015341.cms" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="products-grid">
 
-        <!-- Clothing Categories Section -->
-        <section id="clothing" class="clothing">
-            <h2>Clothing Categories</h2>
-            <div class="clothing-list">
-                <div class="clothing-item">
-                    <img src="images/men-clothing.jpg" alt="Men's Clothing">
-                    <h3>Men's Clothing</h3>
-                    <p>Explore a variety of stylish men's wear.</p>
-                </div>
-                <div class="clothing-item">
-                    <img src="images/women-clothing.jpg" alt="Women's Clothing">
-                    <h3>Women's Clothing</h3>
-                    <p>Discover the latest trends in women's fashion.</p>
-                </div>
-                <div class="clothing-item">
-                    <img src="images/kids-clothing.jpg" alt="Kids' Clothing">
-                    <h3>Kids' Clothing</h3>
-                    <p>Find comfortable and trendy clothing for kids.</p>
-                </div>
-                <div class="clothing-item">
-                    <img src="images/sportswear.jpg" alt="Sportswear">
-                    <h3>Sportswear</h3>
-                    <p>Gear up with high-quality sports apparel.</p>
-                </div>
-                <div class="clothing-item">
-                    <img src="images/accessories.jpg" alt="Accessories">
-                    <h3>Accessories</h3>
-                    <p>Complement your outfit with trendy accessories.</p>
-                </div>
-                <div class="clothing-item">
-                    <img src="images/footwear.jpg" alt="Footwear">
-                    <h3>Footwear</h3>
-                    <p>Step into style with our exclusive footwear collection.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 ShopEase. All Rights Reserved.</p>
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+      <!-- Existing Product Cards -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b" alt="Casual T-shirts">
         </div>
-    </footer>
+        <div class="product-info">
+          <div>
+            <h3>Casual T-shirts</h3>
+            <p>Outerwear</p>
+          </div>
+          <p class="price">$60.00</p>
+        </div>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea" alt="Leather Jackets">
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Leather Jackets</h3>
+            <p>Accessories</p>
+          </div>
+          <p class="price">$89.99</p>
+        </div>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      </div>
+
+      <!-- Additional Product Cards -->
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://jimmyluxury.in/cdn/shop/files/IMG_0112copy_1080x.webp?v=1732612189" alt="Denim Jeans">
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Denim Jeans</h3>
+            <p>Bottomwear</p>
+          </div>
+          <p class="price">$45.00</p>
+        </div>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://rukminim2.flixcart.com/image/850/1000/kz065jk0/shoe/q/t/d/9-wk-120-casual-woakers-red-original-imagb3ycyshf94s4.jpeg?q=90&crop=false" alt="Sneakers">
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Sneakers</h3>
+            <p>Footwear</p>
+          </div>
+          <p class="price">$120.00</p>
+        </div>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://m.media-amazon.com/images/I/61QeNWSSHaL._AC_UY1000_.jpg" alt="Wrist Watch">
+        </div>
+        <div class="product-info">
+          <div>
+            <h3>Wrist Watch</h3>
+            <p>Accessories</p>
+          </div>
+          <p class="price">$150.00</p>
+        </div>
+        <button class="btn-add-to-cart">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features-grid">
+      <div class="feature">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12V7H5a2 2 0 0 1-2-2V3"/><path d="M3 17v2a2 2 0 0 0 2 2h16"/><path d="m21 7-4 4"/><path d="M3 7h18"/></svg>
+        <h3>Free Shipping</h3>
+        <p>On orders over $100</p>
+      </div>
+      <div class="feature">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <h3>Easy Returns</h3>
+        <p>30-day return policy</p>
+      </div>
+      <div class="feature">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+        <h3>Secure Payment</h3>
+        <p>100% secure checkout</p>
+      </div>
+      <div class="feature">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3>24/7 Support</h3>
+        <p>Round the clock assistance</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <h2>Get exclusive offers and updates</h2>
+      <p>Subscribe to our newsletter and receive 10% off your first order</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
 </body>
 </html>
